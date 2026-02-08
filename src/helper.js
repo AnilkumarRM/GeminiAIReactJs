@@ -1,8 +1,8 @@
-export function checkHeading(line) {
+export function checkHeading(str) {
     //replace " with empty space
-    return /^(\*)(\*)(.*)\*$/.test(line.replace(/"/g, ''));
+    return /^(\*)(\*)(.*)\*$/.test(str.replace(/"/g, ''));
 }
 
-export function replaceHeadingStarts(line) {
-    return line.replace(/^(\*)(\*)|(\*)$/g, "");
+export function replaceHeadingStarts(str) {
+    return str.replace(/^(\*)(\*)|(\*)$/g, "");
 }
